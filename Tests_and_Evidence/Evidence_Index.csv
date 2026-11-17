@@ -1,0 +1,27 @@
+﻿Folder,Filename,Suggested caption / evidence description,Source image filename
+01_Final_GUI_Connections,01_TX_Connected_COM30.png,Figure: Final transmitter interface connected to ESP32 TX on COM30.,image(20261115-094318).png
+01_Final_GUI_Connections,02_RX1_RX2_Connected.png,"Figure: Final receiver interface connected to RX1 (COM15) and RX2 (COM25), awaiting infrared signals.",image(20261115-094345).png
+02_Addressed_Message_Tests,01_TX_to_RX2_SOS_Transmission.png,"Figure: Transmitter selects receiver address 02, prepares 02SOS087 and completes transmission.",image(20261115-094932).png
+02_Addressed_Message_Tests,02_RX2_Accepts_RX1_Rejects.png,"Figure: RX2 accepts SOS with matching checksum, while RX1 rejects the incorrect destination address.",image(20261115-095238).png
+02_Addressed_Message_Tests,03_TX_to_RX1_SOS_Transmission.png,Figure: Transmitter selects receiver address 01 and transmits 01SOS086.,image(20261115-095652).png
+02_Addressed_Message_Tests,04_RX1_Accepts_RX2_Rejects_Earlier_GUI.png,Figure: Earlier live receiver GUI confirms RX1 accepts SOS and RX2 rejects the wrong address after recovery.,image(20261115-070432).png
+03_RX1_File_Transfer,01_RX1_Packets_Verified_Offline.png,Figure: Two packets for RX1 pass local checksum and reconstruction verification before transmission.,image(20261115-100600).png
+03_RX1_File_Transfer,02_RX1_TX_Two_Packets_Complete.png,Figure: TX GUI reports sending two file packets to RX1; this is not itself proof of delivery.,image(20261115-101039).png
+03_RX1_File_Transfer,03_RX1_Received_File_Open_in_Notepad.png,"Figure: RX1 reconstructed and auto-saved 54-character received text, opened in Notepad. Another receiver shows a separate serial error in the background.",image(20261115-101239).png
+03_RX1_File_Transfer,04_RX1_120_Char_File_Complete.png,Figure: Earlier 120-character RX1 transfer completed as three packets and saved as a text file.,image(20261115-065741).png
+04_RX2_File_Transfer,01_RX2_TX_Two_Packets_Complete.png,Figure: Final TX GUI reports two file packets transmitted to RX2.,image(20261115-103619).png
+04_RX2_File_Transfer,02_RX2_Received_File_Open_in_Notepad.png,Figure: Reconstructed RX2 54-character text file opened in Notepad after successful live reception.,image(20261115-103641).png
+04_RX2_File_Transfer,03_RX2_Final_File_Complete_And_AutoSaved.png,"Figure: Final receiver GUI shows RX2 file complete, 2/2 packets, 54 characters, automatic .txt saving, and RX1 wrong-address rejection.",image(20261115-103812).png
+05_Robustness_Tests,01_USB_Disconnect_Serial_Error.png,Figure: Live receiver GUI remains open after RX1 USB disconnection and records serial error.,image(20261115-065917).png
+05_Robustness_Tests,02_USB_Reconnect_Recovery.png,Figure: RX1 reconnects and returns to waiting for IR; previously validated file remains available.,image(20261115-070039).png
+05_Robustness_Tests,03_IR_Interrupted_Recovery.png,Figure: Interrupted optical frame triggers rejection and automatic recovery events on both receivers.,image(20261115-070250).png
+05_Robustness_Tests,04_Valid_SOS_After_Interruption.png,Figure: A subsequent valid SOS addressed to RX1 is accepted after recovery.,image(20261115-070432).png
+05_Robustness_Tests,05_TX_Rejects_Invalid_Checksum.png,Figure: TX firmware rejects deliberately corrupted file packet before IR transmission due to checksum mismatch.,image(20261115-090030).png
+05_Robustness_Tests,06_Incomplete_File_One_of_Two.png,"Figure: RX1 stores packet 1/2 but remains in receiving-file state, without file-complete event.",image(20261115-091027).png
+05_Robustness_Tests,07_RX1_Reset_Ready.png,Figure: RX1 reboots and returns to READY following incomplete file transfer.,image(20261115-091232).png
+06_Hardware_Photos,01_TX_Circuit_Photo.jpeg,"Photograph: Actual ESP32 transmitter prototype with IR LED, BC547 driver and resistors on breadboard.",WhatsApp Image 2026-11-15 at 3.17.00 PM.jpeg
+06_Hardware_Photos,02_Receiver_Circuit_and_OLEDs.jpeg,Photograph: Actual receiver breadboard with the two phototransistors and OLED displays.,WhatsApp Image 2026-11-15 at 3.16.00 PM.jpeg
+06_Hardware_Photos,03_Receiver_OLED_Address_Filtering.jpeg,Photograph: Receiver OLED indications during message-addressing test.,WhatsApp Image 2026-11-15 at 3.29.32 PM.jpeg
+06_Hardware_Photos,04_Receiver_OLED_RX1_File.jpeg,Photograph: Receiver OLEDs during the RX1-addressed file transmission.,WhatsApp Image 2026-11-15 at 3.41.26 PM.jpeg
+06_Hardware_Photos,05_Receiver_OLED_RX2_Transmission.jpeg,Photograph: Receiver OLED indications during the RX2 file test.,WhatsApp Image 2026-11-15 at 4.00.13 PM.jpeg
+06_Hardware_Photos,06_Receiver_OLED_RX2_File_Complete.jpeg,Photograph: Receiver OLED indications following RX2 file transfer.,WhatsApp Image 2026-11-15 at 4.06.11 PM.jpeg
