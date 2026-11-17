@@ -1,0 +1,32 @@
+# Build output, cache, computer-specific artifacts
+**/build/
+**/managed_components/
+**/.pytest_cache/
+**/__pycache__/
+**/.venv/
+**/venv/
+**/.idea/
+**/.vscode/
+*.pyc
+*.pyo
+*.bin
+*.elf
+*.map
+*.log
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+# Local credentials and sensitive settings
+.env
+.env.*
+*.pem
+*.key
+# Local PC receiver outputs and backups
+**/received_files/
+**/received_txt/
+**/test_outputs/
+**/user_exports/
+
+# Packaged project archives
+*.zip
